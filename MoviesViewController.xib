@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesViewController">
             <connections>
                 <outlet property="MovieTableView" destination="ESv-wX-1A1" id="mVo-W0-SXk"/>
+                <outlet property="movieSegmentContrl" destination="9AD-7Q-5w5" id="QVB-6c-pdA"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -21,10 +22,26 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9AD-7Q-5w5">
+                    <rect key="frame" x="0.0" y="540" width="320" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Box Office"/>
+                        <segment title="Top DVDS"/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Tzc-7f-NLP">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <segments>
+                <segment title="First"/>
+                <segment title="Second"/>
+            </segments>
+        </segmentedControl>
     </objects>
 </document>
